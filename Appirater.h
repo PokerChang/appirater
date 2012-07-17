@@ -47,7 +47,7 @@ extern NSString *const kAppiraterReminderRequestDate;
 /*
  Place your Apple generated software id here.
  */
-#define APPIRATER_APP_ID				301377083
+#define APPIRATER_APP_ID				530598928
 
 
 /*
@@ -64,13 +64,13 @@ extern NSString *const kAppiraterReminderRequestDate;
  This is the message your users will see once they've passed the day+launches
  threshold.
  */
-#define APPIRATER_LOCALIZED_MESSAGE     NSLocalizedString(@"If you enjoy using %@, would you mind taking a moment to rate it? It won't take more than a minute. Thanks for your support!", nil)
+#define APPIRATER_LOCALIZED_MESSAGE     NSLocalizedString(@"Rate %@ to support new features development! In return, you get more new feature upgrades in the future!", @"Replace %@ with app name")
 #define APPIRATER_MESSAGE				[NSString stringWithFormat:APPIRATER_LOCALIZED_MESSAGE, APPIRATER_APP_NAME]
 
 /*
  This is the title of the message alert that users will see.
  */
-#define APPIRATER_LOCALIZED_MESSAGE_TITLE   NSLocalizedString(@"Rate %@", nil)
+#define APPIRATER_LOCALIZED_MESSAGE_TITLE   NSLocalizedString(@"Want more features?", nil)
 #define APPIRATER_MESSAGE_TITLE             [NSString stringWithFormat:APPIRATER_LOCALIZED_MESSAGE_TITLE, APPIRATER_APP_NAME]
 
 /*
@@ -93,6 +93,7 @@ extern NSString *const kAppiraterReminderRequestDate;
  Users will need to have the same version of your app installed for this many
  days before they will be prompted to rate it.
  */
+//#define APPIRATER_DAYS_UNTIL_PROMPT		0		// double
 #define APPIRATER_DAYS_UNTIL_PROMPT		30		// double
 
 /*
@@ -105,8 +106,8 @@ extern NSString *const kAppiraterReminderRequestDate;
  Users need to 'use' the same version of the app this many times before
  before they will be prompted to rate it.
  */
+//#define APPIRATER_USES_UNTIL_PROMPT		0		// integer
 #define APPIRATER_USES_UNTIL_PROMPT		20		// integer
-
 /*
  A significant event can be anything you want to be in your app. In a
  telephone app, a significant event might be placing or receiving a call.
